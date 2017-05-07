@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:scrollbarThumbVertical="@android:drawable/btn_default"
+    tools:context="com.hue_v.christian.testapp.MainActivity">
+
+
+        <ImageButton
+            android:id="@+id/demo_collection_button"
+
+            android:layout_width="115dp"
+            android:layout_height="121dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/oysterbake"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/demo_external_activity"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="115dp"
+            android:layout_height="121dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/pub"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/demo_collection_button" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="115dp"
+            android:layout_height="121dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/graduation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/demo_external_activity" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="115dp"
+            android:layout_height="121dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/stmarys"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="265dp"
+            android:layout_height="124dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:text="FIESTA OYSTER BAKE\n\n APRIL 12-13\n BUY ONE DAY TICKETS FOR $25.00\n It Will Be Fun!\n Happy Fiesta\n"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/demo_collection_button"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintLeft_toRightOf="@+id/demo_collection_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/demo_collection_button"
+            tools:layout_editor_absoluteY="14dp"
+            tools:layout_editor_absoluteX="125dp"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="261dp"
+            android:layout_height="124dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:text="The Pub:\n\n Come get a refreshing drink and relax!\n\n Karaoke night May 13 2017 at 8:00pm"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/demo_external_activity"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintLeft_toRightOf="@+id/demo_external_activity"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/demo_external_activity"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/editText4"
+            android:layout_width="261dp"
+            android:layout_height="124dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:text="Graduation Commencement Ceremony May 13 2017 at 1:30pm\n"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintLeft_toRightOf="@+id/imageButton3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton3"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="261dp"
+            android:layout_height="124dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:text="Zaragoza new student orientation June 6 2017 at 10:00am\n"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+            app:layout_constraintLeft_toRightOf="@+id/imageButton4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton4"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintVertical_bias="0.333" />
+</android.support.constraint.ConstraintLayout>

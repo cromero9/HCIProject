@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/blue"
+android:scrollbarThumbVertical="@android:drawable/btn_default"
+tools:context="com.hue_v.christian.testapp.MainActivity">
+
+
+<ImageButton
+    android:id="@+id/quesadilla_button"
+
+    android:layout_width="115dp"
+    android:layout_height="121dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:adjustViewBounds="true"
+    android:background="@drawable/quesadilla"
+    android:scaleType="fitCenter"
+    android:visibility="visible"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ImageButton
+    android:id="@+id/demo_external_activity"
+    style="@android:style/Widget.ImageButton"
+    android:layout_width="115dp"
+    android:layout_height="121dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/salad"
+    android:visibility="visible"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/quesadilla_button" />
+
+<ImageButton
+    android:id="@+id/imageButton3"
+    android:layout_width="115dp"
+    android:layout_height="121dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/graduation"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/demo_external_activity" />
+
+<ImageButton
+    android:id="@+id/imageButton4"
+    android:layout_width="115dp"
+    android:layout_height="121dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/stmarys"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="268dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:text="Quesadilla Mexicana:\n\n This is the best quesadilla you will ever have!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintLeft_toRightOf="@+id/demo_collection_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        tools:layout_editor_absoluteY="19dp"
+        tools:layout_editor_absoluteX="127dp" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="261dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:text="Ceasar Salad:\n\n This is a salad."
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/demo_external_activity"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toRightOf="@+id/demo_external_activity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/demo_external_activity"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="261dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:text="Midnight Breakfast:\n\n This is the semester night breakfast for all nighter students to eat and relax while they binge study for their whole semester."
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <RatingBar
+        android:id="@+id/ratingBar5"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:rating="4.5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText4"
+        app:layout_constraintBottom_toBottomOf="@+id/editText4"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+    android:id="@+id/editText5"
+    android:layout_width="261dp"
+    android:layout_height="124dp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="0dp"
+    android:background="@android:color/white"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="This is a text field description of the event\n"
+    app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+    app:layout_constraintLeft_toRightOf="@+id/imageButton4"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <RatingBar
+        android:id="@+id/ratingBar8"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:rating="4.5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/editText5"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText5" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="0dp"
+        android:rating="4.5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintLeft_toLeftOf="@+id/editText2"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar4"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:rating="4.5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/editText3"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

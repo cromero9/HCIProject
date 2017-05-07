@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RattlerFang Cafe</string>
+
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Event Name</string>
+    <string name="display_message">Message</string>
+    <string name="edit_message">Insert Comment Here</string>
+    <string name="button_send">Send</string>
+</resources>
