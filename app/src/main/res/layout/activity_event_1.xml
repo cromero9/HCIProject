@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:scrollbarThumbVertical="@android:drawable/btn_default"
+    tools:context="com.hue_v.christian.testapp.MainActivity">
+
+
+
+
+    <ImageButton
+        android:id="@+id/stmarysbutton"
+        android:layout_width="115dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/oysterbake"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stmarystext"
+        android:layout_width="261dp"
+        android:layout_height="124dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:text="FIESTA OYSTER BAKE\n APRIL 12-13\n BUY ONE DAY TICKETS FOR $25.00\n It Will Be Fun!\n Happy Fiesta\n"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintLeft_toRightOf="@+id/stmarysbutton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="373dp"
+        android:layout_height="465dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:text="FIESTA OYSTER BAKE\n\n The 101st annual Fiesta Oyster Bake has been serving the student community of St. Mary's University to gather scholarship funds for students to continue their studies!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stmarystext"
+        app:layout_constraintVertical_bias="0.512"
+        tools:layout_editor_absoluteY="60dp" />
+
+
+</android.support.constraint.ConstraintLayout>
